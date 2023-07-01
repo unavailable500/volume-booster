@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Volume Booster Open Source",
+  "version": "1.0",
+  "description": "An open source cross browser volume booster",
+  "icons": {
+    "48": "images/icons/speaker-48.png",
+    "96": "images/icons/speaker-96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["http://*/*", "https://*/*", "file:///*"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file:///*"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "js": ["dist/content-script.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "48": "images/icons/speaker-48.png"
+    },
+    "default_popup": "dist/popup.html",
+    "default_title": "Volume Booster Open Source"
+  }
+}

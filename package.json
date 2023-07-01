@@ -1,0 +1,36 @@
+{
+  "name": "volumevideobooster",
+  "version": "1.0.0",
+  "description": "A extension to boost video and audio volume",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --config webpack.config.js --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/webextension-polyfill": "^0.10.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webextension-polyfill": "^0.10.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.110.8",
+    "@types/arrive": "^2.4.1",
+    "arrive": "^2.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
